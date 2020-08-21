@@ -12,7 +12,7 @@
 	cursor: pointer;
 
 	@include break-small() {
-		width: fit-content;
+		width: fit-content(100%);
 	}
 
 	&:focus {

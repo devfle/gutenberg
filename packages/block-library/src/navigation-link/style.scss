@@ -36,7 +36,7 @@
 		position: absolute;
 		left: 0;
 		top: 100%;
-		width: fit-content;
+		width: fit-content(100%);
 		z-index: 2;
 		opacity: 0;
 		transition: opacity 0.1s linear;
