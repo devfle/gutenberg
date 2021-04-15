@@ -48,7 +48,7 @@ const useResizeObserver = () => {
 		} );
 	}, [] );
 
-	const observer;
+	let observer = null;
 	setTimeout(()=> {
 		observer = (
 			<View style={ StyleSheet.absoluteFill } onLayout={ onLayout } />
