@@ -48,9 +48,12 @@ const useResizeObserver = () => {
 		} );
 	}, [] );
 
-	const observer = (
-		<View style={ StyleSheet.absoluteFill } onLayout={ onLayout } />
-	);
+	const observer;
+	setTimeout(()=> {
+		observer = (
+			<View style={ StyleSheet.absoluteFill } onLayout={ onLayout } />
+		);
+	}, 100);
 
 	return [ observer, measurements ];
 };
