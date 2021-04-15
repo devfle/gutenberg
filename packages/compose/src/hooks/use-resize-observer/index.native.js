@@ -49,11 +49,11 @@ const useResizeObserver = () => {
 	}, [] );
 
 	let observer = null;
-	setTimeout(()=> {
+	setTimeout( () => {
 		observer = (
 			<View style={ StyleSheet.absoluteFill } onLayout={ onLayout } />
 		);
-	}, 100);
+	}, 100 );
 
 	return [ observer, measurements ];
 };
